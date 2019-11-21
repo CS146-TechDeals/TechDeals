@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400&subset=latin,latin-ext);
+/*This is for all the pages*/
+header{
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color:rgb(131, 10, 10);
+    max-height: 1000px;
+    height: 600px;
+}
+h1{
+    font-size: 28pt;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom:0px;
+}
+h2{
+    font-size: 20pt;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*End of all pages*/
+
+/*This deals with all the buttons, labels, inputs*/
+button{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14pt;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.forms{
+    text-align: center;
+    margin: auto;
+    position: relative;
+    background-color: rgb(253, 94, 94);
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    box-shadow: 0px 0px 4px 0 black;
+    border-radius: 4px;
+    height: 50%;
+}
+form.login-form{
+    max-height: 500px;
+    min-width: 1000px;
+}
+label{
+    border: 0;
+    font-size: 24px;
+    min-height: 100px;
+    min-width: 100px;
+    border-radius: 4px;
+}
+input{
+    min-height: 50px;
+    min-width: 50px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+/*End of buttons, labels, inputs*/
+
+/*This deals with the navigation bar*/
+ul{
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+li{
+    float: left;
+    background-color: rgb(214, 133, 133);
+    border-right: 1px solid black;
+    flex: 1 1 auto;
+}
+li a{
+    display: block;
+    padding: 8px;
+    font-size: 24pt;
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    background-color: rgb(150, 100, 100);
+}
+/*End of navigation bar*/
+
+/* This is for the homepage */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 170, 170);
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 16px;
+    box-shadow: 0px 0px 4px 0 black;
+    border-radius: 4px;
+    width: 600px;
+}
+.homepage .tech-deals {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage .pics {
+    display: flex;
+    justify-content: center;
+}
+
+img.home{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3{
+    font-size: 20pt;
+    background-color: white;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 16px;
+    box-shadow: 0px 0px 4px 0 black;
+    border-radius: 4px;
+    width: 600px;
+    text-align: center;
+}
+/* End of homepage */
+
+/*Creates a nice white rounded box around items*/
+div.catalog {
+    background-color: white;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 16px;
+    box-shadow: 0px 0px 4px 0 black;
+    border-radius: 4px;
+    width: 800px;
+}
+div.checkout{
+    background-color: white;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 16px;
+    box-shadow: 0px 0px 4px 0 black;
+    border-radius: 4px;
+    width: 600px;
+}
+
+/*end of nice white rounded box*/
+
+/*This deals with the Catalog*/
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    font-size: 22pt;
+    width: 100px;
+    border-bottom: thin solid #CCCCCC
+}
+
+td{
+    border-bottom: thin solid #CCCCCC
+}
+
+tr {
+    border-bottom: thin solid #CCCCCC
+}
+img.displaypic{
+    height: 150px;
+    width: auto;
+    margin-right: 10px;
+}
+td.data{
+    font-size: 20pt;
+}
+/*end of table css*/
+
+/*Desktop*/
+@media only screen and (min-width: 999px){
+
+}
+/*Tablet*/
+@media only screen and (min-width: 400px) and (max-width: 998px){
+
+}
+/*Phone*/
+@media only screen and (max-width: 399px){
+    div.catalog{
+        width: 200px;
+        height: 100%;
+    }
+    img{
+        height: 30px;
+        width: auto;
+    }
+    div.checkout{
+        height: 100%;
+    }
+    .forms{
+        height: 100%;
+    }
+    td{
+        font-size: 32pt;
+    }
+}
