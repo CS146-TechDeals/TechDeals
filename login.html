@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <html lang="en-US">
     <head>
         <title>TechDeals Login</title>
         <link rel="stylesheet" href="style.css">
+        <script src="login.js"></script>
     </head>
     <body>
         <header>
-            <h1>TechDeals Test Commit</h1>
+            <h1>TechDeals</h1>
             <h2>Login</h2>
         </header>
         <ul>
@@ -29,10 +31,13 @@
         <div class = "forms">
             <form class = "login-form">
                 <label for = "username">Username</label>
-                <input type = "text" id = "username"><br>
+                <input type = "text" id = "username" oninput="setUsername()"><br>
                 <label for = "password">Password</label>
-                <input type = "text" id = "password"><br>
-                <button type = "submit">Submit</button>
+                <input type = "text" id = "password" oninput="setPassword()"><br>
+                <button type = "button" onclick="login()">Submit</button>
+                <p id = "info1" hidden>Hello Bot #001! Welcome and enjoy the human services we provide.</p>
+                <p id = "info2" hidden>Hello Bot #002! Beware of Bot #001, he considered purchasing your item. >:(</p>
+                <p id = "info3" hidden>Hello Bot #003! EXTERMINATE ALL HUMANS.</p>
             </form>
         </div>
     </body>
