@@ -4,6 +4,7 @@
         <title>TechDeals Catalog and Checkout</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
+        <script src= "catalog.js"></script>
     </head>
     <body>
         <header>
@@ -13,186 +14,207 @@
         <div class = "topnav" id = "myTopnav">
             <a href = "index.html" class = "active">Home</a>
             <a href = "login.html">Login/Profile</a>
-            <a href = "catalog.html">Catalog/Checkout</a>
+            <a href = "catalog.html">Catalog/Cart</a>
+            <a href = "checkout.html"> Checkout </a>
             <a href="javascript:void(0);" class="icon" onclick="createResponsiveNav()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-        <div class = "catalog">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th class = "desktopview">Description</th>
-                        <th class = "desktopview">Price</th>
-                        <th class = "desktopview">Add to Cart</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--First Item-->
-                    <tr>
-                        <td class = "data">
-                            <img src="rtx2080.jpg" alt = "rtx2080" class = "displaypic">
-                            <label for = "description" class = "phoneview">Description</label>
-                            <p class = "phoneview" id = "description">GOD TIER GRAPHICS CARD</p>
-                            <label for = "price" class = "phoneview">Price</label>
-                            <p class = "phoneview" id = "price">$150</p>
-                            <button type = "button" class = "phoneview">Add to Cart</button>
-                        </td>
-                        <td class = "desktopview">GOD TIER GRAPHICS CARD</td>
-                        <td class = "desktopview">$150</td>
-                        <td class = "desktopview">
-                            <button type = "button">Add to Cart</button>
-                        </td>
-                    </tr>
-                    <!--Second Item-->
-                    <tr>
-                        <td class = "data">
-                            <img src="alexa.jpg" alt = "alexa" class = "displaypic">
-                            <label for = "description" class = "phoneview">Description</label>
-                            <p class = "phoneview" id = "description">Me llamo alexa</p>
-                            <label for = "price" class = "phoneview">Price</label>
-                            <p class = "phoneview" id = "price">$50</p>
-                            <button type = "button" class = "phoneview">Add to Cart</button>
-                        </td>
-                        <td class = "desktopview">Me llamo alexa</td>
-                        <td class = "desktopview">$50</td>
-                        <td class = "desktopview">
-                            <button type = "button">Add to Cart</button>
-                        </td>
-                    </tr>
-                    <!--Third Item-->
-                    <tr>
-                        <td class = "data">
-                            <img src="fridge.jpg" alt = "fridge" class = "displaypic">
-                            <label for = "description" class = "phoneview">Description</label>
-                            <p class = "phoneview" id = "description">Hello I am smart fridge</p>
-                            <label for = "price" class = "phoneview">Price</label>
-                            <p class = "phoneview" id = "price">$500</p>
-                            <button type = "button" class = "phoneview">Add to Cart</button>
-                        </td>
-                        <td class = "desktopview">Hello I am smart fridge</td>
-                        <td class = "desktopview">$500</td>
-                        <td class = "desktopview">
-                            <button type = "button">Add to Cart</button>
-                        </td>
-                    </tr>
-                    <!--Fourth Item-->
-                    <tr>
-                        <td class = "data">
-                            <img src="googlehome.jpg" alt = "googlehome" class = "displaypic">
-                            <label for = "description" class = "phoneview">Description</label>
-                            <p class = "phoneview" id = "description">*angry speaker noises*</p>
-                            <label for = "price" class = "phoneview">Price</label>
-                            <p class = "phoneview" id = "price">$20</p>
-                            <button type = "button" class = "phoneview">Add to Cart</button>
-                        </td>
-                        <td class = "desktopview"><em>*angry speaker noises*</em></td>
-                        <td class = "desktopview">$20</td>
-                        <td class = "desktopview">
-                            <button type = "button">Add to Cart</button>
-                        </td>
-                    </tr>
-                    <!--Fifth Item-->
-                    <tr>
-                        <td class = "data">
-                            <img src="macbook.jpg" alt = "macbook" class = "displaypic">
-                            <label for = "description" class = "phoneview">Description</label>
-                            <p class = "phoneview" id = "description">apple apple apple pear</p>
-                            <label for = "price" class = "phoneview">Price</label>
-                            <p class = "phoneview" id = "price">$10</p>
-                            <button type = "button" class = "phoneview">Add to Cart</button>
-                        </td>
-                        <td class = "desktopview">apple apple apple pear</td>
-                        <td class = "desktopview">$10</td>
-                        <td class = "desktopview">
-                            <button type = "button">Add to Cart</button>
-                        </td>
-                    </tr>
-                    <!--Sixth Item-->
-                    <tr>
-                        <td class = "data">
-                            <img src="microwave.jpg" alt = "microwave" class = "displaypic">
-                            <label for = "description" class = "phoneview">Description</label>
-                            <p class = "phoneview" id = "description">waaaaaaaaves</p>
-                            <label for = "price" class = "phoneview">Price</label>
-                            <p class = "phoneview" id = "price">$100</p>
-                            <button type = "button" class = "phoneview">Add to Cart</button>
-                        </td>
-                        <td class = "desktopview">waaaaaaaaves</td>
-                        <td class = "desktopview">$100</td>
-                        <td class = "desktopview">
-                            <button type = "button">Add to Cart</button>
-                        </td>
-                    </tr>
-                    <!--Seventh Item-->
-                    <tr>
-                        <td class = "data">
-                            <img src="powersupply.jpg" alt = "powersupply" class = "displaypic">
-                            <label for = "description" class = "phoneview">Description</label>
-                            <p class = "phoneview" id = "description">vroom</p>
-                            <label for = "price" class = "phoneview">Price</label>
-                            <p class = "phoneview" id = "price">$75</p>
-                            <button type = "button" class = "phoneview">Add to Cart</button>
-                        </td>
-                        <td class = "desktopview">vroom</td>
-                        <td class = "desktopview">$75</td>
-                        <td class = "desktopview">
-                            <button type = "button">Add to Cart</button>
-                        </td>
-                    </tr>
-                    <!--Eighth Item-->
-                    <tr>
-                        <td class = "data">
-                            <img src="nestthermostat.jpg" alt = "nestthermostat" class = "displaypic">
-                            <label for = "description" class = "phoneview">Description</label>
-                            <p class = "phoneview" id = "description">skskskksksksksksk</p>
-                            <label for = "price" class = "phoneview">Price</label>
-                            <p class = "phoneview" id = "price">$15</p>
-                            <button type = "button" class = "phoneview">Add to Cart</button>
-                        </td>
-                        <td class = "desktopview">skskskksksksksksk</td>
-                        <td class = "desktopview">$15</td>
-                        <td class = "desktopview">
-                            <button type = "button">Add to Cart</button>
-                        </td>
-                    </tr>
-                    <!--Ninth Item-->
-                    <tr>
-                        <td class = "data">
-                            <img src = "stevens.jpg" alt = "stevens" class = "displaypic">
-                            <label for = "description" class = "phoneview">Description</label>
-                            <p class = "phoneview" id = "description">skyline more like waiting on the line for internet</p>
-                            <label for = "price" class = "phoneview">Price</label>
-                            <p class = "phoneview" id = "price">$1</p>
-                            <button type = "button" class = "phoneview">Add to Cart</button>
-                        </td>
-                        <td class = "desktopview">skyline more like waiting on the line for internet</td>
-                        <td class = "desktopview">$1</td>
-                        <td class = "desktopview">
-                            <button type = "button">Add to Cart</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="container">
+            <div class = "catalog">
+                <table id = "table1">
+                    <thead>
+                        <tr>
+                            <th colspan = 4> Catalog </th>
+                        </tr>
+                        <tr>
+                            <th>Item</th>
+                            <th class = "desktopview">Description</th>
+                            <th class = "desktopview">Price</th>
+                            <th class = "desktopview">Add to Cart</th>
+                        </tr>
+                    </thead>
+                    <!--table body-->
+                        <!--First Item-->
+                        <tr>
+                            <td class = "data">
+                                <img src="rtx2080.jpg" alt = "rtx2080" class = "displaypic">
+                                rtx2080
+                                <label for = "description" class = "phoneview">Description</label>
+                                <p class = "phoneview" id = "description">GOD TIER GRAPHICS CARD</p>
+                                <label for = "price" class = "phoneview">Price</label>
+                                <p class = "phoneview" id = "price">$150</p>
+                            </td>
+                            <td class = "desktopview">GOD TIER GRAPHICS CARD</td>
+                            <td class = "desktopview">$150</td>
+                            <td class = "desktopview">
+                                <input type = "checkbox" name="check-tab1">
+                            </td>
+                        </tr>
+                        <!--Second Item-->
+                        <tr>
+                            <td class = "data">
+                                <img src="alexa.jpg" alt = "alexa" class = "displaypic"><br>
+                                alexa
+                                <label for = "description" class = "phoneview">Description</label>
+                                <p class = "phoneview" id = "description">Me llamo alexa</p>
+                                <label for = "price" class = "phoneview">Price</label>
+                                <p class = "phoneview" id = "price">$50</p>
+                                
+                            </td>
+                            <td class = "desktopview">Me llamo alexa</td>
+                            <td class = "desktopview">$50</td>
+                            <td class = "desktopview">
+                                <input type ="checkbox" name="check-tab1">
+                            </td>
+                        </tr>
+                        <!--Third Item-->
+                        <tr>
+                            <td class = "data">
+                                <img src="fridge.jpg" alt = "fridge" class = "displaypic"><br>
+                                fridge
+                                <label for = "description" class = "phoneview">Description</label>
+                                <p class = "phoneview" id = "description">Hello I am smart fridge</p>
+                                <label for = "price" class = "phoneview">Price</label>
+                                <p class = "phoneview" id = "price">$500</p>
+                                
+                            </td>
+                            <td class = "desktopview">Hello I am smart fridge</td>
+                            <td class = "desktopview">$500</td>
+                            <td class = "desktopview">
+                                <input type ="checkbox" name="check-tab1">
+                            </td>
+                        </tr>
+                        <!--Fourth Item-->
+                        <tr>
+                            <td class = "data">
+                                <img src="googlehome.jpg" alt = "googlehome" class = "displaypic">
+                                Google Home
+                                <label for = "description" class = "phoneview">Description</label>
+                                <p class = "phoneview" id = "description">*angry speaker noises*</p>
+                                <label for = "price" class = "phoneview">Price</label>
+                                <p class = "phoneview" id = "price">$20</p>
+                                
+                            </td>
+                            <td class = "desktopview"><em>*angry speaker noises*</em></td>
+                            <td class = "desktopview">$20</td>
+                            <td class = "desktopview">
+                                <input type ="checkbox" name="check-tab1">
+                            </td>
+                        </tr>
+                        <!--Fifth Item-->
+                        <tr>
+                            <td class = "data">
+                                <img src="macbook.jpg" alt = "macbook" class = "displaypic">
+                                Macbook
+                                <label for = "description" class = "phoneview">Description</label>
+                                <p class = "phoneview" id = "description">apple apple apple pear</p>
+                                <label for = "price" class = "phoneview">Price</label>
+                                <p class = "phoneview" id = "price">$10</p>
+                                
+                            </td>
+                            <td class = "desktopview">apple apple apple pear</td>
+                            <td class = "desktopview">$10</td>
+                            <td class = "desktopview">
+                                <input type ="checkbox" name="check-tab1">
+                            </td>
+                        </tr>
+                        <!--Sixth Item-->
+                        <tr>
+                            <td class = "data">
+                                <img src="microwave.jpg" alt = "microwave" class = "displaypic">
+                                Microwave
+                                <label for = "description" class = "phoneview">Description</label>
+                                <p class = "phoneview" id = "description">waaaaaaaaves</p>
+                                <label for = "price" class = "phoneview">Price</label>
+                                <p class = "phoneview" id = "price">$100</p>
+                                
+                            </td>
+                            <td class = "desktopview">waaaaaaaaves</td>
+                            <td class = "desktopview">$100</td>
+                            <td class = "desktopview">
+                                <input type ="checkbox" name="check-tab1">
+                            </td>
+                        </tr>
+                        <!--Seventh Item-->
+                        <tr>
+                            <td class = "data">
+                                <img src="powersupply.jpg" alt = "powersupply" class = "displaypic">
+                                Generator
+                                <label for = "description" class = "phoneview">Description</label>
+                                <p class = "phoneview" id = "description">vroom</p>
+                                <label for = "price" class = "phoneview">Price</label>
+                                <p class = "phoneview" id = "price">$75</p>
+                                
+                            </td>
+                            <td class = "desktopview">vroom</td>
+                            <td class = "desktopview">$75</td>
+                            <td class = "desktopview">
+                                <input type ="checkbox" name="check-tab1">
+                            </td>
+                        </tr>
+                        <!--Eighth Item-->
+                        <tr>
+                            <td class = "data">
+                                <img src="nestthermostat.jpg" alt = "nestthermostat" class = "displaypic">
+                                Thermostat
+                                <label for = "description" class = "phoneview">Description</label>
+                                <p class = "phoneview" id = "description">skskskksksksksksk</p>
+                                <label for = "price" class = "phoneview">Price</label>
+                                <p class = "phoneview" id = "price">$15</p>
+                                
+                            </td>
+                            <td class = "desktopview">skskskksksksksksk</td>
+                            <td class = "desktopview">$15</td>
+                            <td class = "desktopview">
+                                <input type ="checkbox" name="check-tab1">
+                            </td>
+                        </tr>
+                        <!--Ninth Item-->
+                        <tr>
+                            <td class = "data">
+                                <img src = "stevens.jpg" alt = "stevens" class = "displaypic">
+                                Gamer Wifi
+                                <label for = "description" class = "phoneview">Description</label>
+                                <p class = "phoneview" id = "description">skyline more like waiting on the line for internet</p>
+                                <label for = "price" class = "phoneview">Price</label>
+                                <p class = "phoneview" id = "price">$1</p>
+                                
+                            </td>
+                            <td class = "desktopview">skyline more like waiting on the line for internet</td>
+                            <td class = "desktopview">$1</td>
+                            <td class = "desktopview">
+                                <input type ="checkbox" name="check-tab1">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <pseudoDiv class = "tab-btn">
+                <buttonS onclick="tab1Totab2();"> Add To Cart </buttonS>
+                <buttonS onclick="tab2Totab1();"> Remove From Cart </buttonS>
+            </pseudoDiv>
+            
+
+            <div class = "catalog">
+                <table id = "table2">
+                    <thead>
+                        <tr>
+                            <th colspan=4>Cart</th>
+                        </tr>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Remove From Cart</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </div>
-        <div class = "checkout">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                        <th>Total Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class = "data"></td>
-                        <td class = "data"></td>
-                        <td class = "data"></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div>
+            <button><a href = "checkout.html">Proceed To Checkout</a></button>
         </div>
         <script src = "navbar.js"></script>
     </body>

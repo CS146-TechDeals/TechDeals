@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>TechDeals Checkout</title>
+        <title>TechDeals Catalog and Checkout</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
+        <script src= "checkout.js"></script>
     </head>
-    <body>
+    <body onload = "loadCart();">
         <header>
             <h1>TechDeals</h1>
-            <h2>Checkout</h2>
+            <h2>Catalog and Checkout</h2>
         </header>
-        <ul>
-            <li>
-                <a href = "index.html">Home</a>
-            </li>
-            <li>
-                <a href = "login.html">Login</a>
-            </li>
-            <li>
-                <a href = "profile.html">Profile</a>
-            </li>
-            <li>
-                <a href = "catalog.html">Catalog</a>
-            </li>
-            <li>
-                <a href = "checkout.html">Checkout</a>
-            </li>
-        </ul>
-        <div class = "checkout">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                        <th>Total Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class = "data"></td>
-                        <td class = "data"></td>
-                        <td class = "data"></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class = "topnav" id = "myTopnav">
+            <a href = "index.html" class = "active">Home</a>
+            <a href = "login.html">Login/Profile</a>
+            <a href = "catalog.html">Catalog/Checkout</a>
+            <a href = "checkout.html">Checkout</a>
+            <a href="javascript:void(0);" class="icon" onclick="createResponsiveNav()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
+        <div class ="container">
+            <div class = "catalog">
+                <table id = "TAB">
+                    <th>
+                        <tr>
+                            <td> Item </td>
+                            <td> Price </td>
+                        </tr>
+                    </th>
+                </table>
+            </div>
+            <div>
+                <button> Pay Now >>></button>
+            </div>
+        </div>
+        <script src = "navbar.js"></script>
     </body>
 </html>

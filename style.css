@@ -177,6 +177,44 @@ div.checkout{
 /*end of nice white rounded box*/
 
 /*This deals with the Catalog*/
+
+pseudoDiv {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.catalog {
+    float: left;
+    width: 46%;
+}
+
+.container {
+    overflow: hidden; 
+    width: 100%;
+}
+
+.tab-btn {
+    margin: 0px;
+}
+
+buttonS {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 16px 24px;
+    text-align: center;
+    display: block;
+    font-size: 15pt;
+    margin: 30px 2px;
+    cursor: pointer;
+    max-width: 60px;
+}
+
+#TAB{
+    font-size: 40px;
+}
 table{
     border-collapse: collapse;
     text-align: center;
