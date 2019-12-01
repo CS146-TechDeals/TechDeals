@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>TechDeals Catalog and Checkout</title>
+        <title>TechDeals Catalog and Cart</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <script src= "catalog.js"></script>
@@ -9,13 +9,13 @@
     <body>
         <header>
             <h1>TechDeals</h1>
-            <h2>Catalog and Checkout</h2>
+            <h2>Catalog and Cart</h2>
         </header>
         <div class = "topnav" id = "myTopnav">
             <a href = "index.html" class = "active">Home</a>
             <a href = "login.html">Login/Profile</a>
             <a href = "catalog.html">Catalog/Cart</a>
-            <a href = "checkout.html"> Checkout </a>
+            <a href = "checkout.html">Checkout</a>
             <a href="javascript:void(0);" class="icon" onclick="createResponsiveNav()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -40,14 +40,15 @@
                             <td class = "data">
                                 <img src="rtx2080.jpg" alt = "rtx2080" class = "displaypic">
                                 rtx2080
-                                <label for = "description" class = "phoneview">Description</label>
-                                <p class = "phoneview" id = "description">GOD TIER GRAPHICS CARD</p>
-                                <label for = "price" class = "phoneview">Price</label>
-                                <p class = "phoneview" id = "price">$150</p>
+                                <label class = "phoneview">Description</label>
+                                <p class = "phoneview">GOD TIER GRAPHICS CARD</p>
+                                <label class = "phoneview">Price</label>
+                                <p class = "phoneview">$150</p>
+                                
                             </td>
                             <td class = "desktopview">GOD TIER GRAPHICS CARD</td>
                             <td class = "desktopview">$150</td>
-                            <td class = "desktopview">
+                            <td>
                                 <input type = "checkbox" name="check-tab1">
                             </td>
                         </tr>
@@ -56,15 +57,15 @@
                             <td class = "data">
                                 <img src="alexa.jpg" alt = "alexa" class = "displaypic"><br>
                                 alexa
-                                <label for = "description" class = "phoneview">Description</label>
-                                <p class = "phoneview" id = "description">Me llamo alexa</p>
-                                <label for = "price" class = "phoneview">Price</label>
-                                <p class = "phoneview" id = "price">$50</p>
+                                <label class = "phoneview">Description</label>
+                                <p class = "phoneview">Me llamo alexa</p>
+                                <label class = "phoneview">Price</label>
+                                <p class = "phoneview" >$50</p>
                                 
                             </td>
                             <td class = "desktopview">Me llamo alexa</td>
                             <td class = "desktopview">$50</td>
-                            <td class = "desktopview">
+                            <td>
                                 <input type ="checkbox" name="check-tab1">
                             </td>
                         </tr>
@@ -73,15 +74,15 @@
                             <td class = "data">
                                 <img src="fridge.jpg" alt = "fridge" class = "displaypic"><br>
                                 fridge
-                                <label for = "description" class = "phoneview">Description</label>
-                                <p class = "phoneview" id = "description">Hello I am smart fridge</p>
-                                <label for = "price" class = "phoneview">Price</label>
-                                <p class = "phoneview" id = "price">$500</p>
+                                <label class = "phoneview">Description</label>
+                                <p class = "phoneview" >Hello I am smart fridge</p>
+                                <label class = "phoneview">Price</label>
+                                <p class = "phoneview">$500</p>
                                 
                             </td>
                             <td class = "desktopview">Hello I am smart fridge</td>
                             <td class = "desktopview">$500</td>
-                            <td class = "desktopview">
+                            <td>
                                 <input type ="checkbox" name="check-tab1">
                             </td>
                         </tr>
@@ -90,15 +91,15 @@
                             <td class = "data">
                                 <img src="googlehome.jpg" alt = "googlehome" class = "displaypic">
                                 Google Home
-                                <label for = "description" class = "phoneview">Description</label>
-                                <p class = "phoneview" id = "description">*angry speaker noises*</p>
-                                <label for = "price" class = "phoneview">Price</label>
-                                <p class = "phoneview" id = "price">$20</p>
+                                <label class = "phoneview">Description</label>
+                                <p class = "phoneview" >*angry speaker noises*</p>
+                                <label class = "phoneview">Price</label>
+                                <p class = "phoneview" >$20</p>
                                 
                             </td>
                             <td class = "desktopview"><em>*angry speaker noises*</em></td>
                             <td class = "desktopview">$20</td>
-                            <td class = "desktopview">
+                            <td>
                                 <input type ="checkbox" name="check-tab1">
                             </td>
                         </tr>
@@ -107,15 +108,15 @@
                             <td class = "data">
                                 <img src="macbook.jpg" alt = "macbook" class = "displaypic">
                                 Macbook
-                                <label for = "description" class = "phoneview">Description</label>
-                                <p class = "phoneview" id = "description">apple apple apple pear</p>
-                                <label for = "price" class = "phoneview">Price</label>
-                                <p class = "phoneview" id = "price">$10</p>
+                                <label class = "phoneview">Description</label>
+                                <p class = "phoneview" >apple apple apple pear</p>
+                                <label class = "phoneview">Price</label>
+                                <p class = "phoneview">$10</p>
                                 
                             </td>
                             <td class = "desktopview">apple apple apple pear</td>
                             <td class = "desktopview">$10</td>
-                            <td class = "desktopview">
+                            <td>
                                 <input type ="checkbox" name="check-tab1">
                             </td>
                         </tr>
@@ -124,15 +125,15 @@
                             <td class = "data">
                                 <img src="microwave.jpg" alt = "microwave" class = "displaypic">
                                 Microwave
-                                <label for = "description" class = "phoneview">Description</label>
-                                <p class = "phoneview" id = "description">waaaaaaaaves</p>
-                                <label for = "price" class = "phoneview">Price</label>
-                                <p class = "phoneview" id = "price">$100</p>
+                                <label class = "phoneview">Description</label>
+                                <p class = "phoneview">waaaaaaaaves</p>
+                                <label class = "phoneview">Price</label>
+                                <p class = "phoneview">$100</p>
                                 
                             </td>
                             <td class = "desktopview">waaaaaaaaves</td>
                             <td class = "desktopview">$100</td>
-                            <td class = "desktopview">
+                            <td>
                                 <input type ="checkbox" name="check-tab1">
                             </td>
                         </tr>
@@ -141,15 +142,15 @@
                             <td class = "data">
                                 <img src="powersupply.jpg" alt = "powersupply" class = "displaypic">
                                 Generator
-                                <label for = "description" class = "phoneview">Description</label>
-                                <p class = "phoneview" id = "description">vroom</p>
-                                <label for = "price" class = "phoneview">Price</label>
-                                <p class = "phoneview" id = "price">$75</p>
+                                <label class = "phoneview">Description</label>
+                                <p class = "phoneview">vroom</p>
+                                <label class = "phoneview">Price</label>
+                                <p class = "phoneview">$75</p>
                                 
                             </td>
                             <td class = "desktopview">vroom</td>
                             <td class = "desktopview">$75</td>
-                            <td class = "desktopview">
+                            <td>
                                 <input type ="checkbox" name="check-tab1">
                             </td>
                         </tr>
@@ -158,15 +159,15 @@
                             <td class = "data">
                                 <img src="nestthermostat.jpg" alt = "nestthermostat" class = "displaypic">
                                 Thermostat
-                                <label for = "description" class = "phoneview">Description</label>
-                                <p class = "phoneview" id = "description">skskskksksksksksk</p>
-                                <label for = "price" class = "phoneview">Price</label>
-                                <p class = "phoneview" id = "price">$15</p>
+                                <label class = "phoneview">Description</label>
+                                <p class = "phoneview">skskskksksksksksk</p>
+                                <label class = "phoneview">Price</label>
+                                <p class = "phoneview">$15</p>
                                 
                             </td>
                             <td class = "desktopview">skskskksksksksksk</td>
                             <td class = "desktopview">$15</td>
-                            <td class = "desktopview">
+                            <td>
                                 <input type ="checkbox" name="check-tab1">
                             </td>
                         </tr>
@@ -175,26 +176,23 @@
                             <td class = "data">
                                 <img src = "stevens.jpg" alt = "stevens" class = "displaypic">
                                 Gamer Wifi
-                                <label for = "description" class = "phoneview">Description</label>
-                                <p class = "phoneview" id = "description">skyline more like waiting on the line for internet</p>
-                                <label for = "price" class = "phoneview">Price</label>
-                                <p class = "phoneview" id = "price">$1</p>
+                                <label class = "phoneview">Description</label>
+                                <p class = "phoneview">skyline more like waiting on the line for internet</p>
+                                <label class = "phoneview">Price</label>
+                                <p class = "phoneview">$1</p>
                                 
                             </td>
                             <td class = "desktopview">skyline more like waiting on the line for internet</td>
                             <td class = "desktopview">$1</td>
-                            <td class = "desktopview">
+                            <td>
                                 <input type ="checkbox" name="check-tab1">
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-
-            <pseudoDiv class = "tab-btn">
-                <buttonS onclick="tab1Totab2();"> Add To Cart </buttonS>
-                <buttonS onclick="tab2Totab1();"> Remove From Cart </buttonS>
-            </pseudoDiv>
+        </div>
+        <div>
             <div class="catalog">
                 <table id = "table2">
                     <tr>
@@ -206,10 +204,14 @@
                         <th> Remove From Cart </th>
                     </tr>
                 </table>
-            </div>>
+            </div>
+        </div>
+        <div class = "addremove">
+            <button type = "button" class = "buttonS" onclick="tab1Totab2();">Add to Cart</button>
+            <button type = "button" class = "buttonS" onclick="tab2Totab1();">Remove From Cart</button>
         </div>
         <div>
-            <button><a href = "checkout.html">Proceed To Checkout</a></button>
+            <a href = "checkout.html">Proceed To Checkout</a>
         </div>
         <script src = "navbar.js"></script>
     </body>

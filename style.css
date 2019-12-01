@@ -24,11 +24,6 @@ h2{
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /*End of all pages*/
 
 /*This deals with all the buttons, labels, inputs*/
@@ -88,7 +83,7 @@ input{
 
 .topnav a{
     float: left;
-    display: flex;
+    display: block;
     flex-direction: column;
     color: #f2f2f2;
     text-align: center;
@@ -96,8 +91,9 @@ input{
     text-decoration: none;
     font-size: 24px;
 }
+
 .topnav a:hover{
-    background-color: rgb(150, 100, 100);
+    background-color: grey;
 }
 .topnav .icon{
     display: none;
@@ -151,37 +147,14 @@ h3{
 }
 /* End of homepage */
 
-/*Creates a nice white rounded box around items*/
-/* don't know if can fix for responsive css
-div.catalog {
-    background-color: white;
-    margin-top: 16px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 16px;
-    box-shadow: 0px 0px 4px 0 black;
-    border-radius: 4px;
-    width: 800px;
-}
-div.checkout{
-    background-color: white;
-    margin-top: 16px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 16px;
-    box-shadow: 0px 0px 4px 0 black;
-    border-radius: 4px;
-    width: 600px;
-}*/
-
-/*end of nice white rounded box*/
 
 /*This deals with the Catalog*/
 
-pseudoDiv {
+div.addremove {
     display: block;
     justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 .catalog {
     float: left;
@@ -189,15 +162,16 @@ pseudoDiv {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden; 
     width: 100%;
 }
 
-.tab-btn {
-    margin: 0px;
-}
 
-buttonS {
+
+button.buttonS {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     border: none;
@@ -205,13 +179,16 @@ buttonS {
     color: white;
     padding: 16px 24px;
     text-align: center;
-    display: block;
+    display: inline-block;
     font-size: 15pt;
     margin: 30px 2px;
     cursor: pointer;
-    max-width: 60px;
+    max-width: 100px;
 }
 
+input[type = checkbox]{
+    transform: scale(.75);
+}
 #TAB{
     font-size: 40px;
 }
@@ -272,6 +249,7 @@ td.data{
         float: none;
         display: block;
         text-align: left;
+        font-size: 12pt;
     }
     table{
         max-width: 600px;
@@ -298,7 +276,6 @@ td.data{
         display: block;
         padding: 0px;
         margin: 0px;
-        font-size: 12pt;
         align-self: center;
     }
     .desktopview {
