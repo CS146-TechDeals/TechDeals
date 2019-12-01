@@ -2,32 +2,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <html lang="en-US">
     <head>
-        <title>TechDeals Login</title>
+        <title>TechDeals Login and Profile</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="login.js"></script>
     </head>
     <body>
         <header>
             <h1>TechDeals</h1>
-            <h2>Login</h2>
+            <h2>Login and Profile</h2>
         </header>
-        <ul>
-            <li>
-                <a href = "index.html">Home</a>
-            </li>
-            <li>
-                <a href = "login.html">Login</a>
-            </li>
-            <li>
-                <a href = "profile.html">Profile</a>
-            </li>
-            <li>
-                <a href = "catalog.html">Catalog</a>
-            </li>
-            <li>
-                <a href = "checkout.html">Checkout</a>
-            </li>
-        </ul>
+        <div class = "topnav" id = "myTopnav">
+            <a href = "index.html" class = "active">Home</a>
+            <a href = "login.html">Login/Profile</a>
+            <a href = "catalog.html">Catalog/Checkout</a>
+            <a href="javascript:void(0);" class="icon" onclick="createResponsiveNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <div class = "forms">
             <form class = "login-form">
                 <label for = "username">Username</label>
@@ -40,5 +32,6 @@
                 <p id = "info3" hidden>Hello Bot #003! EXTERMINATE ALL HUMANS.</p>
             </form>
         </div>
+        <script src = "navbar.js"></script>
     </body>
 </html>

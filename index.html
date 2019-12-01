@@ -7,6 +7,7 @@
 <html lang="en-US">
     <head>
         <title>TechDeals Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -14,23 +15,14 @@
             <h1>TechDeals</h1>
             <h2>Home</h2>
         </header>
-        <ul>
-            <li>
-                <a href = "index.html">Home</a>
-            </li>
-            <li>
-                <a href = "login.html">Login</a>
-            </li>
-            <li>
-                <a href = "profile.html">Profile</a>
-            </li>
-            <li>
-                <a href = "catalog.html">Catalog</a>
-            </li>
-            <li>
-                <a href = "checkout.html">Checkout</a>
-            </li>
-        </ul>
+        <div class = "topnav" id = "myTopnav">
+            <a href = "index.html" class = "active">Home</a>
+            <a href = "login.html">Login/Profile</a>
+            <a href = "catalog.html">Catalog/Checkout</a>
+            <a href="javascript:void(0);" class="icon" onclick="createResponsiveNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <div class="homepage">
             <div class="tech-deals">
                 <h3>Welcome to TechDeals! Here you will find the best deals on the latest and greatest products!</h3>
@@ -41,5 +33,6 @@
                 <img src="nvidia.jpg" alt = "Nvidia Products" class = "home">
             </div>
         </div>
+        <script src = "navbar.js"></script>
     </body>
 </html>
