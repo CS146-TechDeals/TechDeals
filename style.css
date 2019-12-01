@@ -250,6 +250,7 @@ td.data{
 }
   
 /* Phone*/
+/* navbar responsiveness referenced from https://www.w3schools.com/css/css_navbar.asp */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -285,6 +286,10 @@ td.data{
     h3{
         font-size: 16pt;
     }
+    /*
+    This deals with the responsive view of the table
+    referenced from https://css-tricks.com/responsive-data-tables/
+    */
     table, thead, tbody, th, td, tr { 
 		display: block; 
 	}
