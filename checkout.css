@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400&subset=latin,latin-ext);
+/*This is for all the pages*/
+header{
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color:white;
+    max-height: 1000px;
+    height: 600px;
+}
+h1{
+    font-size: 28pt;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom:0px;
+}
+h2{
+    font-size: 20pt;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+/*End of all pages*/
+
+/*This deals with all the buttons, labels, inputs*/
+button{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14pt;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*End of buttons, labels, inputs*/
+
+/*This deals with the navigation bar*/
+.topnav{
+    background-color: black;
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    flex-direction: column;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.topnav a:hover{
+    background-color: grey;
+}
+.topnav .icon{
+    display: none;
+}
+
+/*End of navigation bar*/
+
+/*general table css*/
+.catalog {
+    float: left;
+    width: 46%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    width: 100%;
+}
+
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    flex: auto;
+    font-size: 22pt;
+    width: 100px;
+    border-bottom: thin solid #CCCCCC
+}
+
+td{
+    align-items: center;
+    flex: auto;
+    border-bottom: thin solid #CCCCCC
+}
+
+tr {
+    flex: auto;
+    border-bottom: thin solid #CCCCCC
+}
+/*end of table css*/
+
+/* Desktop/tablet */
+@media screen and (min-width: 600px)
+{
+    td{
+        font-size:20pt;
+    }
+}
+  
+/* Phone*/
+/* navbar responsiveness referenced from https://www.w3schools.com/css/css_navbar.asp */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        font-size: 12pt;
+    }
+    div.catalog{
+        width: 200px;
+        height: 100%;
+        display: block;
+    }
+    div.checkout{
+        height: 100%;
+    }
+    /*
+    This deals with the responsive view of the table
+    referenced from https://css-tricks.com/responsive-data-tables/
+    */
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	p {
+        margin: 0px;
+        font-size: 12pt;
+    }
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+        padding-left: 50%; 
+	}
+	.checkhead{
+        display: none;
+    }
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+    }
+    td:nth-of-type(1):before { content: "Item"; }
+    td:nth-of-type(2):before { content: "Price"; }
+}

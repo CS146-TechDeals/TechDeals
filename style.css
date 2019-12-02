@@ -159,6 +159,7 @@ div.addremove {
     justify-content: center;
     align-items: center;
     margin: 0px;
+    text-align: center;
 }
 .catalog {
     float: left;
@@ -232,12 +233,8 @@ td.data{
     font-size:16pt;
 }
 .proceedtc{
-    background-color: rgb(73, 71, 71);
-    color: white;
+    color: rgb(57, 126, 255);
     font-size: 20pt;
-    text-decoration: none;
-    display: flex;
-    text-align: center;
 }
 /*end of table css*/
 
