@@ -149,9 +149,6 @@ h3{
 
 
 /*This deals with the Catalog*/
-div.checkout{
-    overflow-x: auto;
-}
 
 div.addremove {
     display: block;
@@ -163,14 +160,18 @@ div.addremove {
 }
 .catalog {
     float: left;
-    width: 46%;
+    max-height: 500px;
+    overflow: scroll;
+    width: 45%;
+}
+
+.checkout {
+    float: right;
+    width: 45%;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
+    display: flex; 
     width: 100%;
 }
 
@@ -185,10 +186,9 @@ button.buttonS {
     display: block;
     justify-content: center;
     font-size: 15pt;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 42%;
     cursor: pointer;
-    max-width: 50%;
+    max-width: 8%;
 }
 
 input[type = checkbox]{
@@ -197,6 +197,7 @@ input[type = checkbox]{
 #TAB{
     font-size: 40px;
 }
+
 table{
     border-collapse: collapse;
     text-align: center;
@@ -233,8 +234,9 @@ td.data{
     font-size:16pt;
 }
 .proceedtc{
-    color: rgb(57, 126, 255);
+    color: red;
     font-size: 20pt;
+    margin-right: 7%;
 }
 /*end of table css*/
 
@@ -243,6 +245,12 @@ td.data{
 {
     td{
         font-size:20pt;
+    }
+    .catalog {
+        float: left;
+    }
+    .checkout {
+        margin-left: 30px;
     }
 }
   
@@ -266,6 +274,13 @@ td.data{
         text-align: left;
         font-size: 12pt;
     }
+    button.buttonS {
+        max-width: 20%;
+        margin-left: 37%;
+    }
+    div.container{
+        justify-content: center;
+    }
     div.catalog{
         width: 200px;
         height: 100%;
@@ -273,6 +288,7 @@ td.data{
     }
     div.checkout{
         height: 100%;
+        float: right;
     }
     .forms{
         height: 100%;
