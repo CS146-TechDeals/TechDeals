@@ -8,7 +8,8 @@
         <title>TechDeals Catalog and Cart</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
-        <script src= "catalog.js"></script>
+        <script src= "addListing.js"></script>
+        <script src = "catalog.js"></script>
     </head>
     <body>
         <header>
@@ -23,6 +24,14 @@
             <a href="javascript:void(0);" class="icon" onclick="createResponsiveNav()">
                 <i class="fa fa-bars"></i>
             </a>
+        </div>
+        <div class="Form">
+            <br/><br/><br/><br/>
+            Item Name:    <input type ="text" name = "IName" id="IName" /><br/><br/>
+            Description:    <input type ="text" name = "desc" id="desc" /><br/><br/>
+            Price:    <input type ="text" name = "price" id="price" /><br/><br/><br/><br/>
+            <button type = "button" onclick="addListing();"> Add New Listing </button>
+            <br/><br/><br/>
         </div>
         <div class="container">
             <div class = "catalog">
@@ -54,7 +63,7 @@
                         <!--Second Item-->
                         <tr>
                             <td class = "data">
-                                <img src="alexa.jpg" alt = "alexa" class = "displaypic"><br>
+                                <img src="alexa.jpg" alt = "alexa" class = "displaypic"><br/>
                                 <p>Alexa</p>    
                             </td>
                             <td>Me llamo alexa</td>
@@ -66,7 +75,7 @@
                         <!--Third Item-->
                         <tr>
                             <td class = "data">
-                                <img src="fridge.jpg" alt = "fridge" class = "displaypic"><br>
+                                <img src="fridge.jpg" alt = "fridge" class = "displaypic"><br/>
                                 <p>Fridge</p>                      
                             </td>
                             <td>Hello I am smart fridge</td>

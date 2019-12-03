@@ -75,3 +75,27 @@ function tab2Totab1 (){
         localStorage.setItem(table2.rows[i+2].cells[0].innerText , table2.rows[i+2].cells[2].innerHTML);
     }
 }
+
+function addListing() {
+    var itemName = document.getElementById("IName").value;
+    var description = document.getElementById("desc").value;
+    var price = document.getElementById("price").value;
+
+    var table = document.getElementById("table1");
+
+    var newRow = table.insertRow(2);
+
+    var cell1 = newRow.insertCell(0);
+    var cell2 = newRow.insertCell(1);
+    var cell3 = newRow.insertCell(2);
+    var cell4 = newRow.insertCell(3);
+
+    cell1.innerHTML = itemName;
+    cell2.innerHTML = description;
+    cell3.innerHTML = price;
+    cell4.innerHTML = "<input type= 'checkbox' name='check-tab1'>";
+
+    document.getElementById("IName").value = "";
+    document.getElementById("desc").value = "";
+    document.getElementById("price").value = "";
+}
