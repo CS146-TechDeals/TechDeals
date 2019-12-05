@@ -12,6 +12,14 @@ function loadCart(){
             cell1.innerHTML = localStorage.key(i);
             cell2.innerHTML = localStorage[localStorage.key(i)];
         }
+    } 
+}
+function redirect(){
+    document.getElementById("paynow").onclick = function(){
+        location.href ="https://www.youtube.com/watch?v=FKEqgl54aIo";
     }
-    
+}
+function checkoutOnLoad(){
+    loadCart();
+    redirect();
 }

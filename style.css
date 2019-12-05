@@ -24,6 +24,9 @@ h2{
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
+p{
+    font-size: 16pt;
+}
 /*End of all pages*/
 
 /*This deals with all the buttons, labels, inputs*/
@@ -346,6 +349,9 @@ td.data{
 		width: 45%; 
 		padding-right: 10px; 
 		white-space: nowrap;
+    }
+    .surveytext {
+        width: 100%;
     }
     td:nth-of-type(1):before { content: "Item"; }
     td:nth-of-type(2):before { content: "Description"; }

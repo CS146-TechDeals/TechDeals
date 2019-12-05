@@ -1,0 +1,42 @@
+<!--
+    Survey page for TechDeals
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>TechDeals Feedback</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src = "feedback.js"></script>
+        <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>TechDeals</h1>
+            <h2>Feedback</h2>
+        </header>
+        <div class = "topnav" id = "myTopnav">
+            <a href = "index.html" class = "active">Home</a>
+            <a href = "login.html">Login/Profile</a>
+            <a href = "catalog.html">Catalog/Cart</a>
+            <a href = "checkout.html">Checkout</a>
+            <a href = "feedback.html">Feedback</a>
+            <a href="javascript:void(0);" class="icon" onclick="createResponsiveNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class = "forms">
+            <form class = "survey-form" id = "survey">
+                <label for = "name" class = "userinput">Name</label>
+                <input type = "text" id = "name" class = "userinput"><br>
+                <input type = "radio" class = "userinput" name = "rating" value = "nice" checked>Nice<br>
+                <input type = "radio" class = "userinput" name = "rating" value = "amazing" >Amazing<br>
+                <input type = "radio" class = "userinput" name = "rating" value = "excellent" >Excellent<br>
+                <textarea class = "userinput" rows = "4" cols = "50" name = "comment" form = "survey">Feedback here...</textarea>
+                <button type = "button" class = "userinput" onclick="surveysubmit()">Submit</button>
+            </form>
+            <p id = "feedback" class = "feedback" hidden>Thank you for your feedback! We will DEFINITELY (not) take it into account.</p>
+        </div>
+        <script src = "navbar.js"></script>
+    </body>
+</html>
